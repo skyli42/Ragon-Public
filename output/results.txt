@@ -1,0 +1,41 @@
+Features selected with Random Forest and Neural Net:
+    Used Lasso + ElasticNet with alpha = 0.036573321313 and l1_ratio = 1.0
+    indices:
+        [
+            14, 30, 44, 233, 312, 665, 786, 885, 1343, 1382, 1652,
+            1843, 1870, 1891, 1941, 2029, 2106, 2140, 2242, 2326, 2510, 2532,
+            2588, 2626, 2671, 2942, 3048, 3160, 3351, 3395, 3448, 3904, 3918,
+            3998, 4012, 4058, 4063, 4210, 4241, 4275, 4294, 4539, 5223, 5540,
+            5580, 5583, 5584, 5590, 5598, 5601, 5607, 5615, 5623
+        ]
+    feature names:
+        [
+            'Pos4_M', 'Pos6_I', 'Pos6_3_R', 'Pos30_A', 'Pos49_E', 'Pos134_A',
+            'Pos147_-', 'Pos151_K', 'Pos198_T', 'Pos209_T', 'Pos271_V',
+            'Pos293_E', 'Pos297_T', 'Pos300_N', 'Pos305_K', 'Pos319_A',
+            'Pos325_D', 'Pos330_H', 'Pos340_N', 'Pos347_E', 'Pos364_S',
+            'Pos369_L', 'Pos379_G', 'Pos389_G', 'Pos393_S', 'Pos429_E',
+            'Pos446_K', 'Pos461_N', 'Pos500_R', 'Pos507_E', 'Pos518_V',
+            'Pos619_Q', 'Pos620_T', 'Pos630_E', 'Pos633_K', 'Pos640_N',
+            'Pos640_D', 'Pos659_D', 'Pos665_K', 'Pos671_N', 'Pos674_D',
+            'Pos723_N', 'Pos815_L', 'N137', 'N289', 'N301', 'N332', 'N354_1',
+            'N392', 'N397', 'N403', 'N411', 'N462'
+        ]
+
+Features selected with SVR:
+    515 features
+    AIC: alpha:0.0244093857864
+    Used ElectricNet
+    l1_ratio: 0.14595959596 
+
+Hyperparameters:
+    SVR: 'C': 10.0, 'gamma': 0.0019952623149688789
+    Random Forest: n_estimators = 97
+    Neural Net: 'activation': 'relu', 'alpha': 10.0, 'hidden_layer_sizes': (50,), 'learning_rate': 'constant', 'learning_rate_init': 0.01, 'solver': 'sgd'
+
+Model performance:
+    SVR: r2 = 0.7770, mse: 6.33007271
+    Random Forest: r2 = 0.493980624376, mse = 1.29610248612 (avg over 10 training sessions)
+    Neural Net: r2 = 0.580732422654, mse = 1.02162575816
+
+
